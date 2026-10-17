@@ -1,0 +1,46 @@
+"UnlitGeneric"
+{
+	// Dummy variable avoids the Source material-proxy first-parameter write bug.
+	"$dummy" "0"
+
+	"$basetexture" "vgui/replay/thumbnails/comphud/tf2_spinner_4rpm_512"
+	"$basetexturetransform" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+	"$translucent" "1"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$clamps" "1"
+	"$clampt" "1"
+	"$ignorez" "1"
+	"$no_fullbright" "1"
+
+	"$angle_raw" "0.0"
+	"$angle_step" "0.0"
+	"$translate" "[0.0 0.0]"
+	"$center" "[0.5 0.5]"
+
+	"Proxies"
+	{
+		// 24 degrees per second = 4 RPM; negative produces clockwise visual rotation.
+		"LinearRamp"
+		{
+			"rate" "-24"
+			"initialValue" "0.0"
+			"resultVar" "$angle_raw"
+		}
+
+		// Quantize to one-degree increments for 24 visible updates per second.
+		"Int"
+		{
+			"srcVar1" "$angle_raw"
+			"resultVar" "$angle_step"
+		}
+
+		"TextureTransform"
+		{
+			"translateVar" "$translate"
+			"rotateVar" "$angle_step"
+			"centerVar" "$center"
+			"resultVar" "$basetexturetransform"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+// RESOURCE: Preloaded standard CompHUD presentation for Hadal.
+"UnlitGeneric"
+{
+	"$alpha" "0.5"
+	"$vertexalpha" "1"
+	"$translucent" "1"
+	"$baseTexture" "vgui/replay/thumbnails/comphud/controlpoints/hadal_icon_obj_main_neutral_locked"
+	"$vertexcolor" "1"
+	"$no_fullbright" "1"
+	"$ignorez" "1"
+}

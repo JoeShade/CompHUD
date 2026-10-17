@@ -1,0 +1,1 @@
+#base "winpanelbase.res"

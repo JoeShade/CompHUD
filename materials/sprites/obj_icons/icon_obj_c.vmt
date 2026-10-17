@@ -1,0 +1,11 @@
+// RESOURCE: Keeps the point artwork below transparent capture-label headroom at half opacity.
+"UnlitGeneric"
+{
+	"$alpha" "0.5"
+	"$vertexalpha" "1"
+	"$translucent" 1
+	"$baseTexture" "vgui/replay/thumbnails/comphud/controlpoints/icon_obj_c"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+}

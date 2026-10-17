@@ -1,0 +1,10 @@
+// RESOURCE: Supplies an invisible viewmodel-mask fallback for older renderers.
+"UnlitGeneric"
+{
+    "$basetexture" "vgui/replay/thumbnails/comphud/viewmodel_mask"
+    "$translucent" "1"
+    "$alpha" "0"
+    "$ignorez" "1"
+    "$vertexcolor" "1"
+    "$vertexalpha" "1"
+}

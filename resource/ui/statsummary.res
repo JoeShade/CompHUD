@@ -1,0 +1,1 @@
+#base	"statsummarybase.res"

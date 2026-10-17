@@ -1,0 +1,11 @@
+// RESOURCE: Keeps Valve's unknown-class artwork while allowing the match-bar panel opacity to affect it.
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/class_portraits/silhouette"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$no_fullbright" "1"
+	"$ignorez" "1"
+	"%keywords" "tf"
+	"$translucent" "1"
+}

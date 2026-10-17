@@ -1,0 +1,7 @@
+// SETTINGS: Supplies a solid black tooltip background using the same material flags as native scalable dialog borders and Valve's black texture.
+"UnlitGeneric"
+{
+	"$basetexture" "models/effects/black"
+	"$translucent" "1"
+	"$ignorez" "1"
+}

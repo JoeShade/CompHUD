@@ -1,0 +1,21 @@
+// CompHUD: horizontal capture progress from the native multirow UV stream.
+// Standard BGRA8888 comparison textures; opacity is encoded in their product.
+"UnlitGeneric"
+{
+    "$baseTexture" "vgui/replay/thumbnails/comphud/controlpoints/horizontal_progress_blu"
+    "$baseTextureTransform" "center 0 0 scale 1 0.5 rotate 0 translate 0 0.5"
+    "$detail" "vgui/replay/thumbnails/comphud/controlpoints/horizontal_progress_mask"
+    "$detailblendmode" "9"
+    "$detailblendfactor" "1"
+    "$separatedetailuvs" "1"
+    "$alpha" "1"
+    "$alphatest" "1"
+    "$alphatestreference" "0.5019607843137255"
+    "$translucent" "1"
+    "$vertexalpha" "1"
+    "$vertexcolor" "1"
+    "$gammaColorRead" "1"
+    "$linearwrite" "1"
+    "$no_fullbright" "1"
+    "$ignorez" "1"
+}

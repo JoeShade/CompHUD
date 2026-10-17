@@ -1,0 +1,13 @@
+// RESOURCE: Replaces half of the viewmodel with the unobstructed world framebuffer using a neutral normal map.
+"Refract"
+{
+    "$refractamount" "0.0"
+    "$refracttint" "{255 255 255}"
+    "$refractblur" "0.0"
+    "$normalmap" "vgui/replay/thumbnails/comphud/viewmodel_mask"
+    // VARIANT: Uses an invisible mask fallback for DirectX 8.
+    "<dx90"
+    {
+        "$fallbackmaterial" "vgui/replay/thumbnails/comphud/viewmodel_fallback"
+    }
+}

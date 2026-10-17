@@ -1,0 +1,1 @@
+#base "hudobjectivetimepanelsimple.res"

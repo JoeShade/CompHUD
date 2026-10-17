@@ -1,0 +1,10 @@
+// RESOURCE: Draws the original tapered black CTF backing at sixty percent opacity.
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/ctf/backing_right"
+	"$alpha" "0.6"
+	"$translucent" "1"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$ignorez" "1"
+}

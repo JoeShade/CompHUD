@@ -1,0 +1,118 @@
+// RESOURCE: Declares the base active teleport target VGUI control tree that TF2 loads for this interface.
+"Resource/UI/build_menu/base.res"
+{
+	// PANEL: Shows the localized TF2 object sentry caption in the item name label control.
+	"ItemNameLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"ItemNameLabel"
+		"font"			"Default"
+		"xpos"			"40"
+		"ypos"			"15"
+		"zpos"			"1"
+		"wide"			"84"
+		"tall"			"15"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#TF_Object_Sentry"
+		"labelText_lodef"		"#TF_Object_Sentry_360"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+	}
+
+	// PANEL: Draws the item background surface that separates related information from the game view.
+	"ItemBackground"
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"ItemBackground"
+		"xpos"			"4"
+		"ypos"			"14"
+		"zpos"			"0"
+		"wide"			"98"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"hud_menu_item_bg"
+		"iconColor"		"ProgressOffWhite"
+	}
+	
+	// PANEL: Shows the configured building icon visual in the base active teleport target interface.
+	"BuildingIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"BuildingIcon"
+		"xpos"			"22"
+		"ypos"			"28"
+		"zpos"			"2"
+		"wide"			"56"
+		"tall"			"56"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"hud_menu_sentry_build"
+		"iconColor"		"255 255 255 255"
+	}
+	
+	// PANEL: Receives TF2-provided text in the mode label readout for the base active teleport target interface.
+	"ModeLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"ModeLabel"
+		"font"			"DefaultSmall"
+		"fgcolor"		"TanDarker"
+		"xpos"			"33"
+		"ypos"			"17"
+		"zpos"			"1"
+		"wide"			"44"
+		"tall"			"13"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		""
+		"textAlignment"	"East"	
+	}
+	
+	// PANEL: Draws the number background surface that separates related information from the game view.
+	"NumberBg"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"NumberBg"
+		"xpos"			"41"
+		"ypos"			"99"
+		"zpos"			"0"
+		"wide"			"0"
+		"tall"			"18"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"ico_key_blank"
+		"iconColor"		"255 255 255 255"
+	}
+	
+	// PANEL: Shows the configured number label caption in the base active teleport target interface.
+	"NumberLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"NumberLabel"
+		"font"			"ChatFont"
+		"fgcolor"		"Garm3nHUDWhite"
+		"xpos"			"0"
+		"ypos"			"85"
+		"zpos"			"1"
+		"wide"			"100"
+		"tall"			"18"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"1"
+		"textAlignment"	"Center"
+		"dulltext"		"1"
+		"brighttext"	"0"
+	}
+}

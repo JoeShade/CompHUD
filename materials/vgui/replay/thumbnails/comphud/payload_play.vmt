@@ -1,0 +1,10 @@
+// RESOURCE: Draws the downward play glyph, inheriting the payload container's single half-opacity fade.
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/payload_play"
+	"$translucent" "1"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$alpha" "1"
+	"$ignorez" "1"
+}

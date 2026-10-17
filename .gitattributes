@@ -1,0 +1,16 @@
+# Preserve game resource encodings and line endings.
+* -text
+
+# Store repository documentation as LF text.
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+*.vtf binary
+*.ttf binary
+*.dat binary
+*.vpk binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary

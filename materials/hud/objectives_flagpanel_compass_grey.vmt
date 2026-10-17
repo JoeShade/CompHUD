@@ -1,0 +1,10 @@
+// RESOURCE: Uses reviewed white CTF artwork while retaining native flag-state and compass selection.
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/ctf/compass_grey"
+	"$alpha" "0.7"
+	"$translucent" "1"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$ignorez" "1"
+}

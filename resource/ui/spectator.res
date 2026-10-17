@@ -1,0 +1,355 @@
+// RESOURCE: Declares the spectator VGUI control tree that TF2 loads for this interface.
+"Resource/UI/Spectator.res"
+{
+	// PANEL: Groups and positions the child controls that compose the spectator area of the spectator interface.
+	"Spectator"
+	{
+		"ControlName"		"Frame"
+		"fieldName"		"Spectator"
+		"tall"			"480"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+	// PANEL: Hosts the spectator overlay, target details, and controls shown while observing another player.
+	"specgui"
+	{
+	}
+	// PANEL: Visualizes the live top bar state as a quickly scannable bar or meter.
+	"topbar"
+	{
+		"ControlName"		"Panel"
+		"fieldName"		"TopBar"
+		"xpos"			"0"
+		"ypos"			"0"
+		"tall"			"0"	
+		"wide"			"f0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+	// PANEL: Visualizes the live bottom bar state as a quickly scannable bar or meter.
+	"BottomBar"
+	{
+		"ControlName"	"Frame"
+		"fieldName"		"BottomBar"
+		"xpos"			"0"
+		"ypos"			"r20"	
+		"tall"			"0"	
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"0"
+		"tabPosition"		"0"
+	}
+	// PANEL: Groups and positions the child controls that compose the bottombarblank area of the spectator interface.
+	"bottombarblank"
+	{
+		"ControlName"		"Panel"
+		"fieldName"		"bottombarblank"
+		"xpos"			"0"
+		"ypos"			"r0"	
+		"tall"			"0"			// this needs to match the size of BottomBar
+		"wide"			"f0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+	}
+	// PANEL: Shows the localized game respawntime in secs caption in the reinforcements label control.
+	"ReinforcementsLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"ReinforcementsLabel"
+		"xpos"			"c-300"	
+		"ypos"			"30"	
+		"ypos_hidef"	"79"
+		"ypos_lodef"	"85"
+		"wide"			"600"	
+		"tall"			"36"
+		"tall_hidef"		"36"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#game_respawntime_in_secs"
+		"textAlignment"		"center"
+		"font"			"RespawnTimerFont"
+		"fgcolor_override" "255 255 255 255"
+	}
+	// PANEL: Receives TF2-provided text in the buy back label readout for the spectator interface. It starts hidden and remains available for runtime state changes.
+	"BuyBackLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"BuyBackLabel"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"320"
+		"tall"			"30"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		""
+		"textAlignment"		"center"
+		"font"			"HudFontSmall"
+		"wrap"			"1"
+		"centerwrap"	"1"
+	}
+	// PANEL: Shows the configured map label caption in the spectator interface. It starts hidden and remains available for runtime state changes.
+	"MapLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"MapLabel"
+		"font"			"HudFontSmall"
+		"font_hidef"		"HudFontMedium"
+		"xpos"			"r260"	
+		"ypos"			"16"	
+		"wide"			"0"	
+		"tall"			"20"
+		"tall_hidef"		"30"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		"map: cp_bridge"
+		"textAlignment"		"east"
+	}
+	// PANEL: Shows the localized TF2 spectator change team caption in the class or team label control.
+	"ClassOrTeamLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"ClassOrTeamLabel"
+		"xpos"			"c-85"
+		"xpos_hidef"	"c-65"
+		"xpos_lodef"	"40"
+		"ypos"			"68"
+		"ypos_hidef"	"90"
+		"ypos_lodef"	"30"	
+		"wide"			"0"
+		"wide_hidef"	"130"
+		"wide_lodef"	"220"
+		"tall"			"0"
+		"tall_lodef"	"25"
+		"zpos"			"2"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_ChangeTeam"
+		"textAlignment"		"center"
+		"textAlignment_lodef"		"north-west"
+		"font"			"SpectatorKeyHints"
+		"font_hidef"	"HudFontSmallest"
+		"font_lodef"	"HudFontSmall"
+		"wrap_lodef"			"1"
+	}
+	// PANEL: Shows the localized TF2 spectator change team caption in the switch cam mode key label control. It starts hidden and remains available for runtime state changes.
+	"SwitchCamModeKeyLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"SwitchCamModeKeyLabel"
+		"xpos"			"5"		
+		"ypos"			"10"	
+		"wide"			"0"	
+		"tall"			"0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_ChangeTeam"
+		"textAlignment"		"east"
+		"font"			"SpectatorKeyHints"
+		
+	}
+	// PANEL: Shows the localized TF2 spectator switch cam mode caption in the switch cam mode label control. It starts hidden and remains available for runtime state changes.
+	"SwitchCamModeLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"SwitchCamModeLabel"
+		"xpos"			"80"	
+		"ypos"			"10"	
+		"wide"			"0"	
+		"tall"			"0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_SwitchCamMode"
+		"textAlignment"		"west"
+		"font"			"SpectatorKeyHints"
+	}
+	// PANEL: Shows the localized TF2 spectator class or team key caption in the cycle target fwd key label control. It starts hidden and remains available for runtime state changes.
+	"CycleTargetFwdKeyLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"CycleTargetFwdKeyLabel"
+		"xpos"			"5"	
+		"ypos"			"20"	
+		"wide"			"0"	
+		"tall"			"0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_ClassOrTeamKey"
+		"textAlignment"		"east"
+		"font"			"SpectatorKeyHints"
+	}
+	// PANEL: Shows the localized TF2 spectator cycle target fwd caption in the cycle target fwd label control. It starts hidden and remains available for runtime state changes.
+	"CycleTargetFwdLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"CycleTargetFwdLabel"
+		"xpos"			"80"	
+		"ypos"			"20"	
+		"wide"			"125"	
+		"tall"			"0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_CycleTargetFwd"
+		"textAlignment"		"west"
+		"font"			"SpectatorKeyHints"
+	}
+	// PANEL: Shows the localized TF2 spectator class or team key caption in the cycle target rev key label control.
+	"CycleTargetRevKeyLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"CycleTargetRevKeyLabel"
+		"xpos"			"5"	
+		"ypos"			"30"	
+		"wide"			"0"	
+		"tall"			"0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_ClassOrTeamKey"
+		"textAlignment"		"east"
+		"font"			"SpectatorKeyHints"
+	}
+	// PANEL: Shows the localized TF2 spectator cycle target rev caption in the cycle target rev label control. It starts hidden and remains available for runtime state changes.
+	"CycleTargetRevLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"CycleTargetRevLabel"
+		"xpos"			"80"	
+		"ypos"			"30"	
+		"wide"			"0"	
+		"tall"			"0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"	
+		"enabled"		"0"
+		"labelText"		"#TF_Spectator_CycleTargetRev"
+		"textAlignment"		"west"
+		"font"			"SpectatorKeyHints"
+	}
+	// PANEL: Displays TF2's live tip in the tip label readout. It starts hidden and remains available for runtime state changes.
+	"TipLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"TipLabel"
+		"xpos"			"20"
+		"xpos_hidef"	"60"
+		"xpos_lodef"	"45"
+		"ypos"			"r60"
+		"ypos_lodef"		"28"
+		"ypos_hidef"		"35"
+		"wide"			"0"
+		"wide_hidef"	"230"
+		"wide_lodef"	"240"
+		"tall"			"0"
+		"tall_hidef"	"70"
+		"tall_lodef"	"70"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		"%tip%"
+		"textAlignment"		"center"	
+		"font"			"SpectatorKeyHints"
+		"font_hidef"	"HudFontSmall"
+		"font_lodef"	"DefaultVerySmall"
+		"wrap"			"1"
+	}
+	// PANEL: Renders the runtime-selected itempanel model. It stays off-screen to preserve the engine binding.
+	"itempanel"
+	{
+		"ControlName"	"CItemModelPanel"
+		"fieldName"		"itempanel"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"9999"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"bgcolor_override"		"255 255 255 0"
+		"PaintBackgroundType"	"0"
+		
+		"model_ypos"		"10"
+		"model_center_x"	"1"
+		"model_wide"		"90"
+		"model_tall"		"60"
+		
+		"text_xpos"		"10"
+		"text_ypos"		"10"
+		"text_wide"		"170"
+		"text_center"	"1"
+		
+		"max_text_height"	"100"
+		"padding_height"	"10"
+		"resize_to_text"	"1"
+		"text_forcesize"	"2"
+		
+		// PANEL TEMPLATE: Defines the reusable item-preview surface instantiated inside the itempanel control.
+		"itemmodelpanel"
+		{
+			"fieldName"		"itemmodelpanel"
+			"use_item_rendertarget" "0"
+			"useparentbg"		"1"
+		}
+		
+		// PANEL: Shows the localized freeze panel item caption in the item label control.
+		"ItemLabel"
+		{	
+			"ControlName"	"Label"
+			"fieldName"		"ItemLabel"
+			"font"			"DefaultSmall"
+			"xpos"			"10"
+			"ypos"			"3"
+			"zpos"			"1"
+			"wide"			"270"
+			"tall"			"9"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"#FreezePanel_Item"
+			"textAlignment"	"Left"
+			"dulltext"		"0"
+			"brighttext"	"0"
+		}
+	}	
+	// PANEL: Groups and positions the child controls that compose the spectator extras area of the spectator interface.
+	"spectator_extras"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"spectator_extras"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}		
+}

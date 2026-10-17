@@ -1,0 +1,11 @@
+// RESOURCE: Halves control-point artwork opacity at the material so native image and mesh draws share the same fade.
+"UnlitGeneric"
+{
+	"$alpha" "0.5"
+	"$vertexalpha" "1"
+	"$translucent" 1
+	"$baseTexture" "sprites\obj_icons/icon_base_red"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+}

@@ -1,0 +1,14 @@
+// RESOURCE: Draws the half-opacity horizontal sweep with baked transparent headroom above the point square.
+"UnlitGeneric"
+{
+	"$vertexalpha" "1"
+	"$alpha" "0.5"
+	"$translucent" 1
+	"$baseTexture" "vgui/replay/thumbnails/comphud/controlpoints/icon_obj_cap_red"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$detail"		"vgui/replay/thumbnails/comphud/controlpoints/capture_mask"
+	"$detailblendmode"	"9"
+	"$separatedetailuvs"	"1"
+}

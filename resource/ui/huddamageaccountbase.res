@@ -1,0 +1,55 @@
+// RESOURCE: Declares the huddamageaccountbase VGUI control tree that TF2 loads for this interface.
+"Resource/UI/HudDamageAccount.res"
+{
+	// PANEL: Hosts the damage number feedback emitted when the local player hurts an enemy.
+	"CDamageAccountPanel"
+	{
+		"fieldName"				"CDamageAccountPanel"
+		"text_x"				"0"
+		"text_y"				"0"
+		"delta_item_end_y"		"0"
+		"PositiveColor"			"Garm3nHUDRealGreen"
+		"NegativeColor"			"Garm3nHUDDamage"
+		"delta_lifetime"		"2.0"
+		"delta_item_font"	"Garm3nFontDamage"
+		"delta_item_font_big"	"Garm3nFontDamage"
+	}
+
+	// PANEL: Displays TF2's live metal in the damage account value readout.
+	"DamageAccountValue"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"DamageAccountValue"
+		"xpos"			"cs-0.5"
+		"ypos"			"r61"
+		"zpos"			"999"
+		"wide"			"f0"
+		"tall"			"32"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"delta_lifetime"		"10.0"
+		"textAlignment"	"center"
+		"fgcolor"		"Garm3nHUDDamage"
+		"font"			"Garm3nFontBiggest"
+	}
+
+	// PANEL: Mirrors the damage account value readout as an offset contrast layer behind the foreground text.
+	"DamageAccountValueShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"DamageAccountValueShadow"
+		"xpos"			"cs-0.5+1"
+		"ypos"			"r60"
+		"zpos"			"2"
+		"wide"			"f0"
+		"tall"			"32"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"delta_lifetime"		"10.0"
+		"textAlignment"	"center"
+		"fgcolor"		"Garm3nHUDDarkGrey"
+		"font"			"Garm3nFontBiggest"
+	}
+}

@@ -1,0 +1,173 @@
+// RESOURCE: Preserve the native penalty leave confirmation with an opaque black dialog backing.
+"Resource/UI/ConfirmDialogAbandonPenalty.res"
+{
+	// PANEL: Paint an opaque black backing beneath the native leave-match warning and actions.
+	"ConfirmDialog"
+	{
+		"ControlName"		"Frame"
+		"fieldName"		"ConfirmDialog"
+		"xpos"			"c-150"
+		"ypos"			"140"
+		"wide"			"300"
+		"tall"			"200"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"settitlebarvisible"	"0"
+		"PaintBackgroundType"	"0"
+		"paintbackground"		"1"
+		"bgcolor_override"	"0 0 0 255"
+	}
+		
+	// PANEL: Display the native title for the current abandonment status.
+	"TitleLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"TitleLabel"
+		"font"			"EconFontMedium"
+		"labelText"		"#ConfirmTitle"
+		"textAlignment"	"north"
+		"xpos"			"0"
+		"ypos"			"15"
+		"zpos"			"1"
+		"wide"			"300"
+		"tall"			"20"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fgcolor_override" "200 80 60 255"
+	}
+	
+	// PANEL: Identify the abandonment warning beside its explanation.
+	"AbandonIcon"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"AbandonIcon"
+		"xpos"		"10"
+		"ypos"		"52"
+		"wide"		"40"
+		"tall"		"40"
+		"image"			"pve/mvm_timeout_active_large"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"		"1"
+	}
+	
+	// PANEL: Display the runtime leave consequences with native wrapping and status colour.
+	"ExplanationLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ExplanationLabel"
+		"font"			"EconFontSmall"
+		"labelText"		"%text%"
+		"textAlignment"	"north-west"
+		"xpos"			"60"
+		"ypos"			"50"
+		"zpos"			"1"
+		"wide"			"220"
+		"tall"			"170"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"wrap"			"1"
+		"fgcolor_override" "200 80 60 255"
+	}
+		
+	// PANEL: Keep the player in the match through the native cancel callback.
+	"CancelButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"CancelButton"
+		"xpos"			"190"
+		"ypos"			"165"
+		"zpos"			"20"
+		"wide"			"100"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"#GameUI_CancelBold"
+		"font"			"EconFontSmall"
+		"textAlignment"	"center"
+		"textinsetx"	"50"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"Command"		"cancel"
+		"sound_depressed"			"UI/buttonclick.wav"
+		"sound_released"			"UI/buttonclickrelease.wav"
+		"border_default"			"Econ.Button.Border.Default"
+		"border_armed"				"Econ.Button.Border.Armed"
+		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
+		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
+		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"
+		"depressedFgColor_override"	"Econ.Button.DepressedFgColor"
+	}
+	
+	// PANEL: Show the controller action for staying in the match.
+	"CancelButtonHintIcon"
+	{
+		"ControlName"	"CSCHintIcon"
+		"fieldName"		"CancelButtonHintIcon"
+		"xpos"			"195"
+		"ypos"			"165"
+		"zpos"			"25"
+		"wide"			"25"
+		"tall"			"25"
+		"visible"		"1"
+		"actionSet"		"MenuControls"
+		"actionName"	"menu_cancel"
+	}
+	// PANEL: Confirm leaving through the native abandonment callback.
+	"ConfirmButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"ConfirmButton"
+		"xpos"			"10"
+		"ypos"			"165"
+		"zpos"			"20"
+		"wide"			"175"
+		"tall"			"25"
+		"default"		"1"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"#ConfirmButtonText"
+		"font"			"EconFontSmall"
+		"textAlignment"	"center"
+		"textinsetx"	"50"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"Command"		"confirm"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"border_default"			"Econ.Button.Border.Default"
+		"border_armed"				"Econ.Button.Border.Armed"
+		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
+		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
+		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"
+		"depressedFgColor_override"	"Econ.Button.DepressedFgColor"
+	}
+	
+	// PANEL: Show the controller action for confirming departure.
+	"ConfirmButtonHintIcon"
+	{
+		"ControlName"	"CSCHintIcon"
+		"fieldName"		"ConfirmButtonHintIcon"
+		"xpos"			"15"
+		"ypos"			"165"
+		"zpos"			"25"
+		"wide"			"25"
+		"tall"			"25"
+		"visible"		"1"
+		"actionSet"		"MenuControls"
+		"actionName"	"menu_select"
+	}			
+}

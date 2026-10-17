@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/class_portraits/comphud_engineer_emblem_red"
+	"$translucent" "1"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$ignorez" "1"
+}

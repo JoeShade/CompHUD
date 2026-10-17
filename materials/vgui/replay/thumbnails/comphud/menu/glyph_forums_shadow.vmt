@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/menu/glyph_forums"
+	"$translucent" "1"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$color" "[0.180 0.169 0.165]"
+	"$ignorez" "1"
+}

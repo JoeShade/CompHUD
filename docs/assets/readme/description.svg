@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="64" viewBox="0 0 820 64" role="img" aria-labelledby="description">
+  <title id="description">A Team Fortress 2 HUD built for competitive play, prioritising clarity and visibility.</title>
+  <style>
+    text { fill: #1f2328; }
+    @media (prefers-color-scheme: dark) { text { fill: #f0f6fc; } }
+  </style>
+  <text x="410" y="24" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="24" font-weight="600">
+    <tspan x="410">A Team Fortress 2 HUD built for competitive play,</tspan>
+    <tspan x="410" dy="30">prioritising clarity and visibility.</tspan>
+  </text>
+</svg>

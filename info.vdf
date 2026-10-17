@@ -1,0 +1,5 @@
+// RESOURCE: Identifies CompHUD and the TF2 UI version it supports.
+"CompHUD"
+{
+	"ui_version"	"3"
+}

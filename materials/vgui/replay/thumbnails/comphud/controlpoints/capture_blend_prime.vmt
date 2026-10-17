@@ -1,0 +1,13 @@
+// CompHUD: write detail blend constant c4.w before the native capture mesh.
+// VertexLitGeneric registers SELFILLUMTINT; UnlitGeneric skips that upload.
+// A transparent texture submits the priming draw while preserving the game view.
+"VertexLitGeneric"
+{
+    "$basetexture" "vgui/replay/thumbnails/comphud/controlpoints/capture_blend_prime"
+    "$selfillumtint" "[1 1 1]"
+    "$detailblendfactor" "1"
+    "$translucent" "1"
+    "$alpha" "1"
+    "$ignorez" "1"
+    "$no_fullbright" "1"
+}

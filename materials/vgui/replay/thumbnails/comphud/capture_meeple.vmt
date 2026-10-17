@@ -1,0 +1,10 @@
+// RESOURCE: Draws the meeple and downward play pointer at the same half opacity as the control-point artwork.
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/capture_meeple"
+	"$translucent" "1"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$alpha" "0.5"
+	"$ignorez" "1"
+}

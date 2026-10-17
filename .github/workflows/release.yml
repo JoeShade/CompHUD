@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out release commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Package and verify HUD
+        run: python3 .github/scripts/package_release.py --ref "$GITHUB_SHA" --output "$RUNNER_TEMP/CompHUD.zip"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          flags=(--latest)
+          if [[ "$RELEASE_TAG" == *-* ]]; then
+            flags=(--prerelease)
+          fi
+          notes=(--generate-notes)
+          if [[ -f ".github/release-notes/$RELEASE_TAG.md" ]]; then
+            notes=(--notes-file ".github/release-notes/$RELEASE_TAG.md")
+          fi
+          gh release create "$RELEASE_TAG" \
+            "$RUNNER_TEMP/CompHUD.zip" \
+            "$RUNNER_TEMP/CompHUD.zip.sha256" \
+            --verify-tag --title "CompHUD $RELEASE_TAG" "${notes[@]}" "${flags[@]}"

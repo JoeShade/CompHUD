@@ -1,0 +1,9 @@
+hudanimations_manifest
+{
+	// Saved options run before the disabled fallback; animation event definitions are first-wins.
+	"file" "cfg/comphud_options_animations.txt"
+	"file" "scripts/hudanimations_disguise.txt"
+	"file" "scripts/hudanimations_ql.txt"
+	"file" "scripts/hudanimations.txt"
+	"file" "scripts/hudanimations_tf.txt"
+}

@@ -1,0 +1,10 @@
+// RESOURCE: Draws a borderless rounded black tournament backing at the same opacity as CTF.
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/comphud/tournament_backing"
+	"$alpha" "0.6"
+	"$translucent" "1"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$ignorez" "1"
+}
