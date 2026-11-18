@@ -3166,18 +3166,18 @@ Scheme
 		}
 		"11"
 		{
-			"font" "resource/fonts/Roboto-Bold.ttf"
+			"font" "resource/fonts/roboto-bold.ttf"
 			"name" "Roboto"
 		}
 		// SETTINGS: Registers the adapted user-supplied Chunk icon font used by the primary main-menu glyph labels.
 		"12"
 		{
-			"font" "resource/fonts/ChunkInterfaceIcons.ttf"
+			"font" "resource/fonts/chunkinterfaceicons.ttf"
 			"name" "ChunkInterfaceIcons"
 		}
 		"10"
 		{
-			"font" "resource/fonts/QDH-SemiBold-Uppercase.ttf"
+			"font" "resource/fonts/qdh-semibold-uppercase.ttf"
 			"name" "QDH Uppercase"
 		}
 		"8"	//Main Menu Font
