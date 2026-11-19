@@ -44,7 +44,7 @@ Press your chosen key to trigger the voice command and manual timer together.
 
 Customise the two shortcut buttons in the main menu with your own hover text and console commands.
 
-1. Open the paint-roller button in the main menu or pause menu, then select **Menu shortcuts**.
+1. Open the paint-roller button in the main menu or pause menu, then select **Scoreboard notes and shortcuts**.
 2. Under **HUD SHORTCUTS**, edit **Shortcut1 tooltip** and **Shortcut2 tooltip** to set each button's hover text.
 3. Edit **Shortcut1 command** and **Shortcut2 command** to choose what each button runs.
 4. Click **OK** to save, then restart TF2 for the changes to take effect.
@@ -52,12 +52,18 @@ Customise the two shortcut buttons in the main menu with your own hover text and
 > [!IMPORTANT]
 > Console commands must start with `engine`, for example `engine map tr_walkway_rc2`.
 
+## Scoreboard notes
+
+Open the paint-roller button in the main menu or pause menu and select **Scoreboard notes and shortcuts**. Under **SCOREBOARD NOTES**, check **Show notes on scoreboard**, enter up to three lines, and click **OK**. Open your scoreboard to read the yellow note. Uncheck the same box to hide it while keeping the text.
+
+Each reminder wraps to the width of the paper, and the next reminder starts beneath it. Text beyond the bottom edge of the paper is clipped. Enter `&&` to display a single ampersand. TF2's editor removes double quotes and percent signs when saving.
+
 ## Updating
 
 1. Close TF2 and move the installed `CompHUD` folder to a backup location outside `tf/custom`.
 2. Download and install the updated folder using the steps above.
 3. Restart TF2.
 
-CompHUD saves its HUD preferences and menu shortcuts in `tf/cfg`, so they persist when the HUD folder is replaced.
+CompHUD saves its HUD preferences, scoreboard notes and menu shortcuts in `tf/cfg`, so they persist when the HUD folder is replaced.
 
 [Back to CompHUD](../README.md)

@@ -156,6 +156,7 @@
 - **Ambassador crosshair overlay** - A fixed crosshair overlay for the Ambassador.
 - **Adjustable viewmodel transparency** – Transparent viewmodels with customisable opacity
 - **Customisable main menu shortcuts** - Set your own shortcut labels and console commands.
+- **Scoreboard notes** - Write reminders in HUD Options and show or hide them beside the player lists.
 
 ## <img src="docs/assets/readme/icon-installation.svg" alt="" width="20" height="20" align="absmiddle"> Installation
 

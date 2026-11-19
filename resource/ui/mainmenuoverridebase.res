@@ -2738,7 +2738,7 @@
 			// ApplySettings defaults visibility back to 1 on each application.
 			"visible" "0"
 		}
-		// PANEL: Centres a compact shortcut-editor button below the transparency track and opens native Advanced Options.
+		// Open the native editor shared by scoreboard notes and menu shortcuts.
 		"ShortcutEditor"
 		{
 			"ControlName" "CExButton"
@@ -2749,7 +2749,7 @@
 			"wide" "234"
 			"tall" "24"
 			"font" "CompHUDItemsAction"
-			"labelText" "Menu shortcuts"
+			"labelText" "Scoreboard notes and shortcuts"
 			"textAlignment" "center"
 			"command" "engine opentf2options"
 			"sound_released" "ui/panel_open.wav"

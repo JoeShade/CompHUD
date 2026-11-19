@@ -22,3 +22,5 @@ __pycache__/
 /cfg/comphud_shortcuts.txt
 /cfg/comphud_sixense_restore.cfg
 /cfg/user.scr
+/cfg/comphud_notes_*.txt
+/cfg/comphud_notes_restore.cfg

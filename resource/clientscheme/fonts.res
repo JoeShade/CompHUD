@@ -17,6 +17,18 @@ Scheme
 	// describes all the fonts
 	Fonts
 	{
+		// The font cell provides the same leading for wrapped text and successive notes.
+		"CompHUDScoreboardNoteBody"
+		{
+			"1"
+			{
+				"name" "CompHUD Notes"
+				"tall" "14"
+				"weight" "700"
+				"antialias" "1"
+			}
+		}
+
 		// SETTINGS: Enlarges capture weight text in the 7-unit label above the lowered pointer.
 		"CompHUDCaptureRateCompact"
 		{
@@ -3168,6 +3180,11 @@ Scheme
 		{
 			"font" "resource/fonts/roboto-bold.ttf"
 			"name" "Roboto"
+		}
+		"13"
+		{
+			"font" "resource/fonts/comphud-notes.ttf"
+			"name" "CompHUD Notes"
 		}
 		// SETTINGS: Registers the adapted user-supplied Chunk icon font used by the primary main-menu glyph labels.
 		"12"

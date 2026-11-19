@@ -34,6 +34,42 @@ VERSION 1.0
 
 DESCRIPTION INFO_OPTIONS
 {
+	"compHUD_notes_category"
+	{
+		"SCOREBOARD NOTES"
+		{ CATEGORY }
+	}
+
+	"exec comphud_notes_begin; echo visible"
+	{
+		"Show notes on scoreboard"
+		"Show your note beside the player lists. Hiding it keeps the text."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_note1; sixense_bind left button_press 1 labelText"
+	{
+		"Note line 1"
+		"Each line wraps on the scoreboard. TF2 removes double quotes and percent signs when saving."
+		{ STRING }
+		{ "" }
+	}
+
+	"compHUD_note2; sixense_bind left button_press 1 labelText"
+	{
+		"Note line 2"
+		{ STRING }
+		{ "" }
+	}
+
+	"compHUD_note3; sixense_bind left button_press 1 labelText"
+	{
+		"Note line 3"
+		{ STRING }
+		{ "" }
+	}
+
 	// SETTINGS: Groups the HUD shortcut editor before the native TF2 options.
 	"compHUD_shortcuts_category"
 	{
