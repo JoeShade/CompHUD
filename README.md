@@ -88,6 +88,8 @@
 
 <img src="screenshots/hud-options.jpg" alt="HUD options panel with captions, timer, crosshair and viewmodel settings" width="100%">
 
+Open **HUD Options** (the paint roller), then **Notes, key picks and shortcuts**. Under **KEY PICKS**, use the master switch and choose the classes you want to highlight.
+
 #### Class selection
 
 <img src="screenshots/class-selection.jpg" alt="Class selection menu with class list, player model and loadout shortcut" width="100%">
@@ -131,6 +133,10 @@
 <details>
 <summary><strong>CompHUD features</strong></summary>
 
+#### Match HUD key picks
+
+<a href="screenshots/key-picks.png"><img src="screenshots/key-picks.png" alt="Soldier on Product with SPY DEAD beneath a BLU portrait and SNIPER DEAD and SPY DEAD beneath two RED portraits" width="100%"></a>
+
 #### Competitive captions
 
 <img src="screenshots/competitive-captions-example.jpg" alt="Competitive captions displaying Pyro buffed, Medic hit and Engineer building alerts" width="100%">
@@ -157,6 +163,7 @@
 - **Adjustable viewmodel transparency** – Transparent viewmodels with customisable opacity
 - **Customisable main menu shortcuts** - Set your own shortcut labels and console commands.
 - **Scoreboard notes** - Write reminders in HUD Options and show or hide them beside the player lists.
+- **Match HUD key picks** – When a player in a chosen class dies on either team, their portrait gains a white outline and a class callout until they respawn.
 
 ## <img src="docs/assets/readme/icon-installation.svg" alt="" width="20" height="20" align="absmiddle"> Installation
 

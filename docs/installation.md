@@ -44,7 +44,7 @@ Press your chosen key to trigger the voice command and manual timer together.
 
 Customise the two shortcut buttons in the main menu with your own hover text and console commands.
 
-1. Open the paint-roller button in the main menu or pause menu, then select **Scoreboard notes and shortcuts**.
+1. Open the paint-roller button in the main menu or pause menu, then select **Notes, key picks and shortcuts**.
 2. Under **HUD SHORTCUTS**, edit **Shortcut1 tooltip** and **Shortcut2 tooltip** to set each button's hover text.
 3. Edit **Shortcut1 command** and **Shortcut2 command** to choose what each button runs.
 4. Click **OK** to save, then restart TF2 for the changes to take effect.
@@ -54,9 +54,17 @@ Customise the two shortcut buttons in the main menu with your own hover text and
 
 ## Scoreboard notes
 
-Open the paint-roller button in the main menu or pause menu and select **Scoreboard notes and shortcuts**. Under **SCOREBOARD NOTES**, check **Show notes on scoreboard**, enter up to three lines, and click **OK**. Open your scoreboard to read the yellow note. Uncheck the same box to hide it while keeping the text.
+Open the paint-roller button in the main menu or pause menu and select **Notes, key picks and shortcuts**. Under **SCOREBOARD NOTES**, check **Show notes on scoreboard**, enter up to three lines, and click **OK**. Open your scoreboard to read the yellow note. Uncheck the same box to hide it while keeping the text.
 
 Each reminder wraps to the width of the paper, and the next reminder starts beneath it. Text beyond the bottom edge of the paper is clipped. Enter `&&` to display a single ampersand. TF2's editor removes double quotes and percent signs when saving.
+
+## Match HUD key picks
+
+1. Open **HUD Options** (the paint roller) in the main menu or pause menu and select **Notes, key picks and shortcuts**.
+2. Under **KEY PICKS**, check **Enable key-pick highlights** and choose the classes to track. Medic, Demoman and Sniper are selected by default.
+3. Click **OK**, then restart TF2 to apply your choices.
+
+When the match HUD shows a player in one of those classes as dead, their portrait gets a white outline and a class callout until they respawn. Turning highlights off keeps your class choices. If the team portraits are hidden, enter `tf_use_match_hud 1` in the console.
 
 ## Updating
 
@@ -64,6 +72,6 @@ Each reminder wraps to the width of the paper, and the next reminder starts bene
 2. Download and install the updated folder using the steps above.
 3. Restart TF2.
 
-CompHUD saves its HUD preferences, scoreboard notes and menu shortcuts in `tf/cfg`, so they persist when the HUD folder is replaced.
+CompHUD saves its HUD preferences, key-pick selections, scoreboard notes and menu shortcuts in `tf/cfg`, so they persist when the HUD folder is replaced.
 
 [Back to CompHUD](../README.md)
