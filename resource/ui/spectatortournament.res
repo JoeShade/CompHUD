@@ -52,7 +52,7 @@
 				"fgcolor"		"Garm3nHUDWhite"
 			}
 
-			// PANEL TEMPLATE: Defines the class portrait slot populated by the playerpanels KeyValues control.
+			// Shared roster materials draw the square class emblem in the top half of this panel.
 			"classimage"
 			{
 				"ControlName"	"CTFClassImage"
@@ -61,7 +61,7 @@
 				"ypos"			"2"
 				"zpos"			"2"
 				"wide"			"12"
-				"tall"			"12"
+				"tall"			"24"
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"

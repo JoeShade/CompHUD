@@ -1,0 +1,5 @@
+#base "class_portraits/comphud_placeholder_material.txt"
+"UnlitGeneric"
+{
+    "$frame" "2"
+}

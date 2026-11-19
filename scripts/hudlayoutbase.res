@@ -486,7 +486,8 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r660"	
-		"ypos"	 "35"	
+		// Leave room for the match roster and its full-width class callouts.
+		"ypos"	 "50"
 		"wide"	 "648"
 		"tall"	 "488"
 

@@ -1,0 +1,5 @@
+// Centre the live emblem in the upper square, leaving one eighth of the slot on each side.
+"UnlitGeneric"
+{
+    "$basetexturetransform" "center 0 0 scale 1.333333 2.666667 rotate 0 translate -0.166667 -0.166667"
+}

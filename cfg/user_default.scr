@@ -70,6 +70,92 @@ DESCRIPTION INFO_OPTIONS
 		{ "" }
 	}
 
+	"compHUD_keypicks_category"
+	{
+		"KEY PICKS"
+		{ CATEGORY }
+	}
+
+	"alias compHUD_pick_limit echo max"
+	{
+		"Enable key-pick highlights"
+		"Show outlines and callouts for the classes checked below. Turning this off keeps your selections. Click OK and restart TF2 to apply."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"exec comphud_picks_begin; echo $frame"
+	{
+		"Scout"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_soldier; echo $frame"
+	{
+		"Soldier"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_pyro; echo $frame"
+	{
+		"Pyro"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_demoman; echo $frame"
+	{
+		"Demoman"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"compHUD_pick_heavy; echo $frame"
+	{
+		"Heavy"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_engineer; echo $frame"
+	{
+		"Engineer"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_medic; echo $frame"
+	{
+		"Medic"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"compHUD_pick_sniper; echo $frame"
+	{
+		"Sniper"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"compHUD_pick_spy; echo $frame"
+	{
+		"Spy"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
 	// SETTINGS: Groups the HUD shortcut editor before the native TF2 options.
 	"compHUD_shortcuts_category"
 	{

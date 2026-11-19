@@ -1,0 +1,4 @@
+"UnlitGeneric"
+{
+    "$frame" "1"
+}

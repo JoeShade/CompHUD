@@ -28,7 +28,7 @@
 		"tall"			"o1"
 		"proportionaltoparent"	"1"
 		"scaleImage"	"1"
-		"image"			"class_portraits/silhouette_alpha"
+		"image"			"class_portraits/comphud_silhouette_square"
 		"mouseinputenabled"	"0"
 		"border"	""
 		"paintborder" "0"

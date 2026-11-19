@@ -24,3 +24,4 @@ __pycache__/
 /cfg/user.scr
 /cfg/comphud_notes_*.txt
 /cfg/comphud_notes_restore.cfg
+/cfg/comphud_pick_*.txt

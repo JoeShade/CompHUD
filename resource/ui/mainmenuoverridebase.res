@@ -2738,7 +2738,7 @@
 			// ApplySettings defaults visibility back to 1 on each application.
 			"visible" "0"
 		}
-		// Open the native editor shared by scoreboard notes and menu shortcuts.
+		// Open the native editor shared by notes, match HUD picks and menu shortcuts.
 		"ShortcutEditor"
 		{
 			"ControlName" "CExButton"
@@ -2749,7 +2749,7 @@
 			"wide" "234"
 			"tall" "24"
 			"font" "CompHUDItemsAction"
-			"labelText" "Scoreboard notes and shortcuts"
+			"labelText" "Notes, key picks and shortcuts"
 			"textAlignment" "center"
 			"command" "engine opentf2options"
 			"sound_released" "ui/panel_open.wav"

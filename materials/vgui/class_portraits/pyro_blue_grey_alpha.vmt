@@ -1,8 +1,4 @@
+#base "pyro_grey_alpha.vmt"
 "UnlitGeneric"
 {
-	"$basetexture" "vgui/replay/thumbnails/comphud/class_portraits/comphud_pyro_emblem_grey"
-	"$translucent" "1"
-	"$vertexcolor" "1"
-	"$vertexalpha" "1"
-	"$ignorez" "1"
 }
