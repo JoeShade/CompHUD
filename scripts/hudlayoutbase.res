@@ -247,14 +247,14 @@
 		"alpha" "128" // Match the control-point and normal payload opacity for the entire disguise group.
 	}
 
-	// PANEL: Registers and positions TF2's main target id runtime HUD panel in the global viewport layout. It starts hidden and remains available for runtime state changes.
+	// The aimed-at player's or building's ID fits between the healer ID and the crosshair.
 	CMainTargetID
 	{
 		"fieldName" 	"CMainTargetID"
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-52"
-		"ypos"		"293"
+		"ypos"		"187"
 		"wide"	 	"104"
 		"tall"	 	"48"
 		"priority"	"40"
@@ -1010,17 +1010,17 @@
 		"PaintBackgroundType"	"2"
 	}
 	
-	// PANEL: Registers and positions TF2's HUD menu engy build runtime HUD panel in the global viewport layout.
+	// The three Engineer menus share an anchor between the MvM ready prompt and captions.
 	"HudMenuEngyBuild"
 	{
 		"fieldName" 	"HudMenuEngyBuild"
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-225"
-		"ypos"			"c-55"
+		"ypos"			"c-98"
 		"zpos"			"20"
 		"wide"			"450"
-		"tall"			"195"
+		"tall"			"193"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -1031,10 +1031,10 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-225"
-		"ypos"			"c-55"
+		"ypos"			"c-98"
 		"zpos"			"20"
 		"wide"			"450"
-		"tall"			"200"
+		"tall"			"193"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -1045,10 +1045,10 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-125"
-		"ypos"			"c-55"
+		"ypos"			"c-98"
 		"zpos"			"20"
 		"wide"			"250"
-		"tall"			"195"
+		"tall"			"193"
 		"PaintBackgroundType"	"0"
 	}
 	

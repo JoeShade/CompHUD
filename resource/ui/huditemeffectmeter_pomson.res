@@ -15,13 +15,13 @@
 		"MeterBG"		"Gray"
 	}
 
-	// PANEL: Shows the localized TF2 ball caption in the item effect meter label control.
+	// Keep the Pomson label and bar together between clip ammo and the fixed damage number.
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"c-55"
-		"ypos"					"r136" //r117
+		"ypos"					"r82"
 		"zpos"					"2"
 		"wide"					"111"
 		"tall"					"5"
@@ -45,7 +45,7 @@
 		"fieldName"		"ItemEffectMeter"
 		"font"			"Default"
 		"xpos"			"c-55"
-		"ypos"			"r136" //r117
+		"ypos"			"r82"
 		"zpos"			"2"
 		"wide"			"111"
 		"tall"			"5"
