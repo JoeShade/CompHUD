@@ -1,0 +1,18 @@
+#base "../../../cfg/comphud_pick_master.txt"
+"UnlitGeneric"
+{
+    "$translucent" "1"
+    "$vertexcolor" "1"
+    // The emblem has the usual 20% opacity baked in. Keep the outline and text bright.
+    "$vertexalpha" "0"
+    "$ignorez" "1"
+    // The saved master switch supplies max. The engine defaults to 1 on first install.
+    "Proxies"
+    {
+        "Clamp"
+        {
+            "srcVar1" "$frame"
+            "resultVar" "$frame"
+        }
+    }
+}

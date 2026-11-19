@@ -1,8 +1,4 @@
+#base "heavy_grey_alpha.vmt"
 "UnlitGeneric"
 {
-	"$basetexture" "vgui/replay/thumbnails/comphud/class_portraits/comphud_heavy_emblem_grey"
-	"$translucent" "1"
-	"$vertexcolor" "1"
-	"$vertexalpha" "1"
-	"$ignorez" "1"
 }

@@ -1,3 +1,4 @@
+#base "comphud_portrait_uv.txt"
 "UnlitGeneric"
 {
 	"$basetexture" "vgui/replay/thumbnails/comphud/class_portraits/comphud_medic_emblem_blue"

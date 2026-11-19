@@ -34,6 +34,128 @@ VERSION 1.0
 
 DESCRIPTION INFO_OPTIONS
 {
+	"compHUD_notes_category"
+	{
+		"SCOREBOARD NOTES"
+		{ CATEGORY }
+	}
+
+	"exec comphud_notes_begin; echo visible"
+	{
+		"Show notes on scoreboard"
+		"Show your note beside the player lists. Hiding it keeps the text."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_note1; sixense_bind left button_press 1 labelText"
+	{
+		"Note line 1"
+		"Each line wraps on the scoreboard. TF2 removes double quotes and percent signs when saving."
+		{ STRING }
+		{ "" }
+	}
+
+	"compHUD_note2; sixense_bind left button_press 1 labelText"
+	{
+		"Note line 2"
+		{ STRING }
+		{ "" }
+	}
+
+	"compHUD_note3; sixense_bind left button_press 1 labelText"
+	{
+		"Note line 3"
+		{ STRING }
+		{ "" }
+	}
+
+	"compHUD_keypicks_category"
+	{
+		"KEY PICKS"
+		{ CATEGORY }
+	}
+
+	"alias compHUD_pick_limit echo max"
+	{
+		"Enable key-pick highlights"
+		"Show outlines and callouts for the classes checked below. Turning this off keeps your selections. Click OK and restart TF2 to apply."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"exec comphud_picks_begin; echo $frame"
+	{
+		"Scout"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_soldier; echo $frame"
+	{
+		"Soldier"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_pyro; echo $frame"
+	{
+		"Pyro"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_demoman; echo $frame"
+	{
+		"Demoman"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"compHUD_pick_heavy; echo $frame"
+	{
+		"Heavy"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_engineer; echo $frame"
+	{
+		"Engineer"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
+	"compHUD_pick_medic; echo $frame"
+	{
+		"Medic"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"compHUD_pick_sniper; echo $frame"
+	{
+		"Sniper"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "1" }
+	}
+
+	"compHUD_pick_spy; echo $frame"
+	{
+		"Spy"
+		"Mark this class on both teams while the match HUD shows it dead. Apply with OK and restart TF2."
+		{ BOOL }
+		{ "0" }
+	}
+
 	// SETTINGS: Groups the HUD shortcut editor before the native TF2 options.
 	"compHUD_shortcuts_category"
 	{

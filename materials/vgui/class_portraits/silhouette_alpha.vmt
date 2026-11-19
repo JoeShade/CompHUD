@@ -1,11 +1,6 @@
-// RESOURCE: Keeps Valve's unknown-class artwork while allowing the match-bar panel opacity to affect it.
+#base "comphud_placeholder_material.txt"
+// Frame zero holds the stock unknown-class image above an empty callout row.
 "UnlitGeneric"
 {
-	"$basetexture" "vgui/class_portraits/silhouette"
-	"$vertexcolor" "1"
 	"$vertexalpha" "1"
-	"$no_fullbright" "1"
-	"$ignorez" "1"
-	"%keywords" "tf"
-	"$translucent" "1"
 }

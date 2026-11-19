@@ -56,7 +56,7 @@
 		"iconColor"		"ProgressOffWhite"
 	}
 
-	// PANEL: Draws the smaller white nut glyph raised slightly to align optically with the metal numerals.
+	// The nut and metal count share the narrow gap between captions and clip ammo.
 	AccountIcon
 	{
 		"controlName"	"ImagePanel"
@@ -65,10 +65,10 @@
 		"enabled"		"1"
 		"zpos"			"2"
 
-		"xpos"			"c-32.1667" //4
-		"ypos"			"r172.6667" //r318
-		"wide"			"23.3333"
-		"tall"			"23.3333"
+		"xpos"			"c-21"
+		"ypos"			"r144"
+		"wide"			"11"
+		"tall"			"11"
 
 		
 		"drawcolor_override"		"255 255 255 255"
@@ -84,10 +84,10 @@
 		"enabled"		"1"
 		"zpos"			"1"
 
-		"xpos"			"c-31.1667" //5
-		"ypos"			"r171.6667" //r317
-		"wide"			"23.3333"
-		"tall"			"23.3333"
+		"xpos"			"c-20"
+		"ypos"			"r143"
+		"wide"			"11"
+		"tall"			"11"
 
 		
 		"drawcolor_override"		"IconShadow"
@@ -100,43 +100,21 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AccountValue"
-		"xpos"			"c-15" //34
-		"ypos"			"r172" //r308
+		"xpos"			"c-8"
+		"ypos"			"r144"
 		"zpos"			"2"
-		"wide"			"60"
-		"tall"			"26"
+		"wide"			"29"
+		"tall"			"12"
 		"autoResize"	"1"
 		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"%metal%"
-		"textAlignment"	"center" //west
+		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"fgcolor"		"Garm3nHUDWhite"
-		"font"			"Garm3nFontCounterOutlined"
-	}
-	// PANEL: Mirrors the account value readout as an offset contrast layer behind the foreground text.
-	"AccountValueShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"AccountValueShadow"
-		"xpos"			"c-14" //35
-		"ypos"			"r171" //r307
-		"zpos"			"1"
-		"wide"			"60"
-		"tall"			"26"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%metal%"
-		"textAlignment"	"center" //west
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"fgcolor"		"Garm3nHUDDarkGrey"
-		"font"			"Garm3nFontMedium"
+		"font"			"Garm3nFontTinyShadow"
 	}
 }

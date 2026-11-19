@@ -1,14 +1,14 @@
 // RESOURCE: Declares the item effect meter HUD kartcharge VGUI control tree that TF2 loads for this interface.
 "Resource/UI/HudItemEffectMeter_Scout.res"
 {
-	// PANEL: Visualizes the live HUD item effect meter state as a quickly scannable bar or meter.
+	// Kart mode equips melee, leaving the clip position free for kart health and boost.
 	HudItemEffectMeter
 	{
 		"fieldName"				"HudItemEffectMeter"
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-55"
-		"ypos"					"c95"	
+		"ypos"					"c118"
 		"wide"					"500"
 		"tall"					"500"
 		"MeterFG"				"White"

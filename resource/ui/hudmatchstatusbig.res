@@ -11,17 +11,14 @@
 		// PANEL TEMPLATE: Defines the reusable player-row schema that the scoreboard populates at runtime.
 		"playerpanels_kv"
 		{
-			// PANEL TEMPLATE: Displays 20%-opaque black class emblems, grey death variants, or the unknown-class silhouette above the translucent team square and health strips.
-			"classimage"
-			{
-				"zpos"			"9"
-			}
+			// Scale the row with its native slot width so the callout fits even on the widest rosters.
+			"tall" "o2"
 			// PANEL OVERRIDE: Uses larger outlined respawn digits for the larger player-box preset.
 			"respawntime"
 			{
 				"font" "CompHUDRespawnOutlinedLarge"
 			}
-			// PANEL TEMPLATE: Shows health as a thin strip pinned inside the team square so the team colour stays visible.
+			// PANEL TEMPLATE: Use the thicker health strip on larger portraits.
 			"healthbar"
 			{
 				"ypos" "0"

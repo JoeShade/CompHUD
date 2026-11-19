@@ -435,17 +435,17 @@
 				"pinCorner"		"0"
 				"visible"		"0"
 			}
-			// PANEL TEMPLATE: Displays 20%-opaque black class emblems, grey death variants, or the unknown-class silhouette above the translucent team square and health strips.
+			// Keep the class image aligned with the team background so selected players get a full-width callout.
 			"classimage"
 			{
 				"ControlName"	"CTFClassImage"
 				"fieldName"		"classimage"
-				"xpos" "2"
-				"ypos" "1"
+				"xpos" "0"
+				"ypos" "0"
 				"zpos"			"9"
 				"alpha" "51"
-				"wide" "f4"
-				"tall" "o1"
+				"wide" "f0"
+				"tall" "o2"
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
@@ -467,7 +467,7 @@
 				"PaintBackgroundType"	"0"
 				"proportionaltoparent"	"1"
 			}
-			// PANEL TEMPLATE: Shows health as a thin strip pinned inside the team square so the team colour stays visible.
+			// PANEL TEMPLATE: Pin the top of the health strip to the bottom of the portrait so the emblem has equal vertical margins.
 			"healthbar"
 			{	
 				"ControlName"			"ContinuousProgressBar"
@@ -488,7 +488,7 @@
 				"ypos" "0"
 				"tall" "2"
 				"pin_to_sibling" "classimagebg"
-				"pin_corner_to_sibling" "2"
+				"pin_corner_to_sibling" "0"
 				"pin_to_sibling_corner" "2"
 			}
 			// PANEL TEMPLATE: Overlays overheal on the bottom health strip.
@@ -513,7 +513,7 @@
 				"ypos" "0"
 				"tall" "2"
 				"pin_to_sibling" "classimagebg"
-				"pin_corner_to_sibling" "2"
+				"pin_corner_to_sibling" "0"
 				"pin_to_sibling_corner" "2"
 			}
 			// PANEL: Shows TF2-selected health icon artwork in the hudmatchstatusbase interface. It starts hidden and remains available for runtime state changes.
